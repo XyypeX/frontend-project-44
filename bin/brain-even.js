@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
 import { greet } from '../src/cli.js';
 
-const numberGen = () => { //question:
+export const numberGen = () => { //question:
   return Math.floor(Math.random() * 1001) //создаём число
 }
+
 const ifEven = (ourNum) => {  //этим проверим на чётность
   if (ourNum % 2 === 0) {
    return true
@@ -11,7 +12,7 @@ const ifEven = (ourNum) => {  //этим проверим на чётность
    return false
   }
 }
-const wePlayThis = () => {  
+const playEven = () => {  
     const userName = greet();
    console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -45,4 +46,4 @@ if (userAnswer === ifCorrectAnswer) {
 console.log('Congratulations, ' + userName + '!');
 }
 
-wePlayThis();
+playEven();
