@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { greet } from '../src/cli.js';
-console.log('node bin/brain-games.js\nWelcome to the Brain Games!');
+import startCalcGame from '../games/calc.js';  // импортируем под тем же именем
 
-greet();
+startCalcGame();
