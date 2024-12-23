@@ -24,4 +24,4 @@ const generateRound = () => {
 
 const gameRules = 'What is the result of the expression?';
 
-export default runGame(gameRules, generateRound);
+export default () => runGame(gameRules, generateRound);
