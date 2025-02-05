@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greet } from './cli.js';
+import greet from './cli.js';
 
 const runGame = (gameRules, generateRound) => {
   console.log('Welcome to the Brain Games!');
