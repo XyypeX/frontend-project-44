@@ -10,7 +10,7 @@ export default [
       sourceType: 'module',
     },
     plugins: {
-      import: importPlugin
+      import: importPlugin,
     },
     rules: {
       // Базовые правила
@@ -29,7 +29,7 @@ export default [
 
       // Правила импорта
       'import/newline-after-import': 'error',
-      'import/prefer-default-export': 'error'
+      'import/prefer-default-export': 'error',
     },
     ignores: ['node_modules/', 'dist/'],
   },
