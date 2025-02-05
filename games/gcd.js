@@ -1,4 +1,4 @@
-import { runGame } from '../src/index.js';
+import runGame from '../src/index.js';
 
 const getGCD = (a, b) => {
   if (b === 0) {

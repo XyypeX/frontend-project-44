@@ -1,4 +1,4 @@
-import { runGame } from '../src/index.js';
+import runGame from '../src/index.js';
 
 const gameRules = 'What number is missing in the progression?';
 const numsAmountInProgr = 10;
