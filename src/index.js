@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import greet from './cli.js';
+import { greet } from './cli.js';
 
-export default (gameRules, generateRound) => {
+const runGame = (gameRules, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = greet();
   console.log(gameRules);
@@ -10,7 +10,7 @@ export default (gameRules, generateRound) => {
 
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = generateRound();
-    console.log(`Question: ${question}`);
+    console.log(`Question: ${ question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer.toString()) {
@@ -23,3 +23,5 @@ export default (gameRules, generateRound) => {
 
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default runGame;
