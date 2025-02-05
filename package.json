@@ -9,7 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-    "bin": {
+  "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "eslint": "^9.14.0",
     "eslint-config-node": "^4.1.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
     "globals": "^15.12.0"
   }

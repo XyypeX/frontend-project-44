@@ -1,24 +1,36 @@
 import globals from 'globals';
+import importPlugin from 'eslint-plugin-import';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
     languageOptions: {
       globals: globals.browser,
-      ecmaVersion: 'latest', // Используем последнюю версию ECMAScript
-      sourceType: 'module', // Указываем, что используем модули
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
+    plugins: {
+      import: importPlugin
     },
     rules: {
       // Базовые правила
-      'indent': ['error', 2], // Отступы в 2 пробела
-      'quotes': ['error', 'single'], // Использование одинарных кавычек
-      'semi': ['error', 'always'], // Точка с запятой обязательна
-      'no-multi-spaces': 'error', // Запрет на множественные пробелы
-      'eol-last': ['error', 'always'], // Новая строка в конце файла
-      'no-trailing-spaces': 'error', // Запрет на пробелы в конце строк
-      'prefer-const': 'error', // Использование const вместо let,если переменная не переопределяется
-      'max-len': ['error', { 'code': 100 }], // Максимальная длина строки 100 символов
+      indent: ['error', 2],
+      quotes: ['error', 'single'],
+      semi: ['error', 'always'],
+      'no-multi-spaces': 'error',
+      'eol-last': ['error', 'always'],
+      'no-trailing-spaces': 'error',
+      'prefer-const': 'error',
+      'max-len': ['error', { code: 100 }],
+      'padded-blocks': ['error', 'never'],
+      'prefer-template': 'error',
+      'quote-props': ['error', 'as-needed'],
+      'space-in-parens': ['error', 'never'],
+
+      // Правила импорта
+      'import/newline-after-import': 'error',
+      'import/prefer-default-export': 'error'
     },
-    ignores: ['node_modules/', 'dist/'], // Игнорируемые директории
+    ignores: ['node_modules/', 'dist/'],
   },
 ];

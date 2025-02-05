@@ -5,7 +5,7 @@ const numsAmountInProgr = 10;
 
 const generateRound = () => {
   const countBy = Math.floor(Math.random() * 10 + 1);
-  const firstNumOfProgression = Math.floor(Math.random() * 10 );
+  const firstNumOfProgression = Math.floor(Math.random() * 10);
   const arrayOfProgression = [];
   for (let i = firstNumOfProgression; arrayOfProgression.length < numsAmountInProgr; i += countBy) {
     arrayOfProgression.push(i);
