@@ -3,7 +3,7 @@ import { greet } from './cli.js';
 
 export const runGame = (gameRules, generateRound) => {
   console.log('Welcome to the Brain Games!');
-  const userName = greet(); 
+  const userName = greet();
   console.log(gameRules);
 
   const roundsCount = 3;

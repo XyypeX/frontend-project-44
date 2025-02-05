@@ -10,7 +10,7 @@ const getGCD = (a, b) => {
 const generateRound = () => {
   const num1 = Math.floor(Math.random() * 100) + 1; // числа от 1 до 100
   const num2 = Math.floor(Math.random() * 100) + 1;
-  
+
   const question = `${num1} ${num2}`;
   const answer = getGCD(num1, num2);
 
