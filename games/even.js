@@ -1,4 +1,4 @@
-import { runGame } from '../src/index.js';
+import runGame from '../src/index.js';
 
 const isEven = (num) => num % 2 === 0;
 
